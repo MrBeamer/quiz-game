@@ -11,22 +11,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="app.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="highscores.css" />
+    <title>Highscores</title>
   </head>
   <body>
     <div class="box">
-      <div>
-        <p class="category">Type</p>
-        <p class="difficulty">Difficulty</p>
-        <p class="question">Question</p>
-      </div>
-      <div>
-        <button class="btn btn-primary incorrect-answers">Incorrect</button>
-        <button class="btn btn-primary correct-answer">Answer</button>
-        <button class="btn btn-primary next-question">Next question</button>
+      <div id="highscores" class="flex-center flex-column">
+        <h1>Top 3</h1>
+        <ol id="highscore-list"></ol>
+        <a href="/" class="btn">Go home</a>
       </div>
     </div>
-
-    <script src="quiz.js"></script>
+    <script src="highscores.js"></script>
   </body>
 </html>
