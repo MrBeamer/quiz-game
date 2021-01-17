@@ -5,6 +5,7 @@
   background-color: #ff5d73;
   color: white;
   margin-top: 1.875rem;
+  border-radius: 5px;
 }
 
 .answer-container:hover {
@@ -22,4 +23,43 @@
 .answer-text {
   padding: 20px;
   width: 100%;
+}
+
+.correct {
+  background-color: #5dffe9;
+  transition: background-color 300ms linear;
+}
+
+.incorrect {
+  background-color: #ff1131;
+  transition: background-color 300ms linear;
+}
+
+/* hud */
+#hud {
+  display: flex;
+  justify-content: space-between;
+  color: #7c7a7a;
+  margin-bottom: 3.125rem;
+}
+
+.hud-prefix {
+  font-size: 2rem;
+}
+
+#progress-text {
+  margin-bottom: 1rem;
+}
+
+#progress-bar {
+  height: 2.5rem;
+  border: 1px solid #5effea;
+  border-radius: 5px;
+  width: 12.5rem;
+}
+
+.progress-bar-full {
+  height: 2.4rem;
+  width: 0%;
+  background-color: #5effea;
 }

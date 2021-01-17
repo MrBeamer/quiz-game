@@ -13,28 +13,18 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
+.h1-secondary-color {
+  color: #5effea;
+}
+
 h2 {
   font-size: 2rem;
   color: #7c7a7a;
+  margin-bottom: 1rem;
 }
 
 i {
   font-size: 5rem;
-}
-
-.category {
-}
-
-.difficulty {
-}
-
-.correct-answer {
-}
-
-.incorrect-answers {
-}
-
-.next-question {
 }
 
 .box {
@@ -96,4 +86,23 @@ i {
 
 .hidden {
   display: none;
+}
+
+/* forms */
+
+input {
+  border: none;
+  border: 1.5px solid #ff5d73;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: #7c7a7a;
+}
+
+input:focus {
+  outline: none !important;
+  border: 1px solid #ff5d73;
+  box-shadow: 0 0 2px #ff5d73;
 }

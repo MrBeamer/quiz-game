@@ -2,6 +2,9 @@
 
 const questionEl = document.getElementById("question");
 const answerEl = Array.from(document.getElementsByClassName("answer-text"));
+const scoreEl = document.getElementById("score");
+const progressTextEl = document.getElementById("progress-text");
+const progressBarFullEl = document.querySelector(".progress-bar-full");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -41,9 +44,16 @@ function startGame() {
 function getNewQuestion() {
   if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
     // go the end page
+    localStorage.setItem("mostRecentScore", score);
     return window.location.assign("/game-over.html");
+    console.log(score);
   }
   questionCounter++;
+  // Updates how many questions have been answered of the max questions
+  progressTextEl.textContent = `Question ${questionCounter}/${maxQuestions}`;
+  // Updates the width and simultaneously the visually progress of the bar
+  progressBarFullEl.style.width = `${(questionCounter / maxQuestions) * 100}%`;
+
   // Get a randomNumber, so that a random question(object) can get picked from the array
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
@@ -68,8 +78,17 @@ answerEl.forEach((answer) => {
     const selectedChoice = e.target;
     const selectedAnswer = selectedChoice.dataset.number;
 
-    console.log(selectedAnswer);
-    getNewQuestion();
+    const classToApply =
+      selectedAnswer == currentQuestion.correctAnswer ? "correct" : "incorrect";
+    if (selectedAnswer == currentQuestion.correctAnswer) {
+      scoreEl.textContent = score += correctPoints;
+    }
+    selectedChoice.classList.add(classToApply);
+    // delays the remove-class and the call of the next question
+    setTimeout(() => {
+      selectedChoice.classList.remove(classToApply);
+      getNewQuestion();
+    }, 1100);
   });
 });
 
