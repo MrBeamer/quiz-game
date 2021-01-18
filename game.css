@@ -18,6 +18,7 @@
 .answer-prefix {
   background-color: #7c7a7a;
   padding: 20px;
+  border-radius: 5px 0 0 5px;
 }
 
 .answer-text {
@@ -93,6 +94,7 @@
 
   #progress-bar {
     width: 7.5rem;
+    margin-top: 5px;
   }
 }
 
@@ -116,6 +118,7 @@
   }
   .answer-text {
     font-size: 1rem;
+    padding: 16px;
   }
 
   .answer-prefix {
@@ -126,6 +129,7 @@
   }
   #progress-bar {
     height: 1rem;
+    margin-top: 5px;
   }
 }
 
@@ -155,6 +159,7 @@
 
   #progress-bar {
     width: 7.5rem;
+    margin-top: 5px;
   }
 
   .answer-container {
