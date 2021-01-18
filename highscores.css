@@ -13,3 +13,17 @@
 .high-score:hover {
   transform: scale(1.15);
 }
+
+/* Mobile  640px */
+@media screen and (max-width: 39.9375em) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* shitty phones */
+@media screen and (max-width: 321px) {
+  h1 {
+    font-size: 3rem;
+  }
+}

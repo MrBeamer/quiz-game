@@ -63,3 +63,81 @@
   width: 0%;
   background-color: #5effea;
 }
+
+/*  Tablets */
+@media (min-width: 576px) {
+  .box {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/* Mobile  640px */
+@media screen and (max-width: 39.9375em) {
+  .box {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  #progress-text {
+    display: none;
+  }
+
+  #progress-bar {
+    width: 7.5rem;
+  }
+}
+
+/* shitty phones */
+@media screen and (max-width: 360px) {
+  .box {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .hud-prefix {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: -0.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  #progress-text {
+    display: none;
+  }
+
+  #progress-bar {
+    width: 7.5rem;
+  }
+
+  .answer-container {
+    margin-top: 0.875rem;
+  }
+  .answer-text {
+    font-size: 1rem;
+  }
+
+  .answer-prefix {
+    padding: 16px;
+  }
+  .progress-bar-full {
+    height: 0.9rem;
+  }
+  #progress-bar {
+    height: 1rem;
+  }
+}

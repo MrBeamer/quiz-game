@@ -29,7 +29,6 @@ fetch(url)
         question: _.unescape(loadedQuestion.question),
       };
 
-      console.log(loadedQuestion.question);
       const answersChoices = [...loadedQuestion.incorrect_answers];
       formattedQuestion.correctAnswer = Math.floor(Math.random() * 3) + 1;
       answersChoices.splice(
