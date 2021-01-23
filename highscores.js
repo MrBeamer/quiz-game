@@ -1,3 +1,5 @@
+"use strict";
+
 const highScoreListEl = document.getElementById("highscore-list");
 const highscores = JSON.parse(localStorage.getItem("highscores")) || [];
 console.log(highscores);

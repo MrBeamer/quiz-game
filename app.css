@@ -8,9 +8,19 @@
 
 h1 {
   font-size: 5rem;
-  color: #ff5d73;
+  color: #7c7a7a;
   text-align: center;
   margin-bottom: 1.5rem;
+}
+
+span {
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  background-color: #ff5d73;
+  padding: 12px 16px;
+  border-radius: 5px;
 }
 
 .h1-secondary-color {

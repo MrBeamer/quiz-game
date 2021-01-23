@@ -12,4 +12,4 @@ Project is created with:
 
 ## Live Preview
 
-https://are-you-smart.netlify.app
+https://10-questions.netlify.app/
