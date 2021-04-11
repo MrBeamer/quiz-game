@@ -116,3 +116,41 @@ input:focus {
   border: 1px solid #ff5d73;
   box-shadow: 0 0 2px #ff5d73;
 }
+
+/* Big tablet to 1200 px (width smaller then row 1140px) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Small tablet, to big tablet from 768 - 1023 px */
+@media only screen and (max-width: 1023px) {
+}
+
+/* Small phones, to small tablets from 481 - 767 px */
+@media only screen and (max-width: 767px) {
+  #home h1 {
+    font-size: 3rem;
+  }
+
+  #home span {
+    font-size: 3.5rem;
+  }
+}
+
+/* Small phones from 0 - 480 px */
+@media only screen and (max-width: 321px) {
+  #home h1 {
+    font-size: 2rem;
+    margin-bottom: 2.1rem;
+  }
+
+  #home span {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    padding: 11px;
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    width: 11rem;
+  }
+}

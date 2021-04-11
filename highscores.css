@@ -21,7 +21,7 @@
   }
 }
 
-/* shitty phones */
+/* very small phones */
 @media screen and (max-width: 321px) {
   h1 {
     font-size: 3rem;
